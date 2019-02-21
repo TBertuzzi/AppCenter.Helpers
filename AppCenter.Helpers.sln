@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCenter.Helpers", "AppCenter.Helpers\AppCenter.Helpers.csproj", "{17D29572-9F0B-4C2B-90CD-CA5D72F17B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCenter.Helpers.Sample", "AppCenter.Helpers.Sample\AppCenter.Helpers.Sample.csproj", "{8482CA25-99B9-45F8-A858-CDBAC84396BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{17D29572-9F0B-4C2B-90CD-CA5D72F17B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D29572-9F0B-4C2B-90CD-CA5D72F17B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D29572-9F0B-4C2B-90CD-CA5D72F17B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8482CA25-99B9-45F8-A858-CDBAC84396BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8482CA25-99B9-45F8-A858-CDBAC84396BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8482CA25-99B9-45F8-A858-CDBAC84396BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8482CA25-99B9-45F8-A858-CDBAC84396BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
