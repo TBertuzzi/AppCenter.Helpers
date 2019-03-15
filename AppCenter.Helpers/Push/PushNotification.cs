@@ -8,21 +8,15 @@ using AppCenter.Helpers.Models;
 using HttpExtension;
 using Newtonsoft.Json;
 using System.Linq;
+using AppCenter.Helpers.Base;
 
 namespace AppCenter.Helpers.Push
 {
-    public sealed class PushNotification
+    public sealed class PushNotification : BaseHttpClient
     {
-        private readonly Config _config;
-        private HttpClient _httpClient;
-        public PushNotification(Config config)
+        public PushNotification(Config config) 
+            : base(config)
         {
-            _config = config;
-
-            _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri(string.Format(EndPoints.RestApi,config.OwnerName,config.AppName));
-            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            _httpClient.DefaultRequestHeaders.Add("X-API-Token", config.Token);
 
         }
 
@@ -32,7 +26,7 @@ namespace AppCenter.Helpers.Push
         public async Task<ServiceResponse<Notification>>
             SendPushNotificationAsync(Notification notification)
         {
-            var response = await _httpClient.PostAsync<Notification>("push/notifications", notification);
+            var response = await this.PostAsync<Notification>("push/notifications", notification);
             return response;
         }
 
@@ -42,7 +36,7 @@ namespace AppCenter.Helpers.Push
         public async Task<ServiceResponse<NotificationResult>>
             GetPushNotificationsAsync()
         {
-            var response = await _httpClient.GetAsync<NotificationResult>("push/notifications");
+            var response = await this.GetAsync<NotificationResult>("push/notifications");
             return response;
         }
 
@@ -55,7 +49,7 @@ namespace AppCenter.Helpers.Push
             var parameters = new Dictionary<string, string>();
             parameters.Add("notification_id", notificationId);
 
-            var response = await _httpClient.GetAsync<NotificationResult>("push/notifications", parameters);
+            var response = await this.GetAsync<NotificationResult>("push/notifications", parameters);
             return response;
         }
     }

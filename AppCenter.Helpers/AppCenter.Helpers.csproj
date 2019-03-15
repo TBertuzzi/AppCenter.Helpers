@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <Folder Include="Extension\" />
-    <Folder Include="Models\Push\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>
