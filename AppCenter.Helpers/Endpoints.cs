@@ -6,6 +6,6 @@ namespace AppCenter.Helpers
 {
     public class EndPoints
     {
-        public static string RestApi = "https://api.appcenter.ms/v0.1/apps/{0}/{1}/";
+        public const string RestApi = "https://api.appcenter.ms/v0.1/apps/{0}/{1}/";
     }
 }

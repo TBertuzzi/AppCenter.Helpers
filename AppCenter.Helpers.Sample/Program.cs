@@ -30,7 +30,7 @@ namespace AppCenter.Helpers.Sample
             };
 
             var push = new PushNotification(config);
-          //  var result = push.SendPushNotification(notificacao);
+            var result = push.SendPushNotification(notificacao);
 
             var resultList = push.GetPushNotifications();
 
