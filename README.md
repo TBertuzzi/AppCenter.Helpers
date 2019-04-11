@@ -68,3 +68,25 @@ To get all the notifications just use the method below
 ```
 
 To configure Push Notification in appcenter [click here](https://docs.microsoft.com/en-us/appcenter/push/) 
+
+**Analytics** (In development)
+
+Get all events through GetEvents method
+
+```csharp
+   var analytics = new Analytics.Analytics(config);
+   var result = analytics.GetEvents();
+```
+
+**Analytics** (In development)
+
+Get all error groups through GetErrorGroups method
+
+```csharp
+   var errors = new Errors.Errors(config);
+   var result = errors.GetErrorGroups();
+```
+
+App Center APIs are being implemented bit by bit. Pullrequests are welcome but should follow the existing pattern :)
+
+
