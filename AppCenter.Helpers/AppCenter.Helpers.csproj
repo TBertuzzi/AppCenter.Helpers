@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>bertuzzi</Authors>
+    <Company>KBits</Company>
+    <Description>Helpers  to use app center APIs</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseUrl>http://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+    <PackageTags>xamarin xamarin.forms mobile ios android appcenter app center helpers</PackageTags>
+    <PackageReleaseNotes>Initial Version</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/TBertuzzi/AppCenter.Helpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TBertuzzi/AppCenter.Helpers</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

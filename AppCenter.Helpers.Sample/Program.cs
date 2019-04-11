@@ -23,9 +23,9 @@ namespace AppCenter.Helpers.Sample
                 },
                 NotificationContent = new NotificationContent()
                 {
-                    Name = "enupemec",
-                    Title = "Notificação Mediação",
-                    Body = "Teste App Center",
+                    Name = "MyAppName",
+                    Title = "Notification Title",
+                    Body = "Notification Body",
                 }
             };
 
