@@ -16,12 +16,12 @@ namespace AppCenter.Helpers.Sample
 
             var notificacao = new Notification
             {
-                NotificationTarget = new NotificationTarget()
+                NotificationTarget = new NotificationTarget
                 {
                     Type = "devices_target",
                     Devices = new List<string>(new string[] { "00000000-0000-0000-0000-000000000001" }) //exemplo
                 },
-                NotificationContent = new NotificationContent()
+                NotificationContent = new NotificationContent
                 {
                     Name = "MyAppName",
                     Title = "Notification Title",

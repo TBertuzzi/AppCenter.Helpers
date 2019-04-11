@@ -7,7 +7,7 @@ using System.Text;
 
 namespace AppCenter.Helpers.Models
 {
-    public partial class NotificationResult
+    public class NotificationResult
     {
         public static NotificationResult FromJson(string json) => JsonConvert.DeserializeObject<NotificationResult>(json, Settings);
 
