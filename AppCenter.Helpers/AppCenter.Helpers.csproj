@@ -12,6 +12,7 @@
     <PackageReleaseNotes>Initial Version</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/TBertuzzi/AppCenter.Helpers</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TBertuzzi/AppCenter.Helpers</RepositoryUrl>
+    <PackageIconUrl>https://github.com/TBertuzzi/AppCenter.Helpers/blob/master/Resources/icon.png?raw=true</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
