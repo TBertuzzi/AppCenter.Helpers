@@ -10,9 +10,9 @@ namespace AppCenter.Helpers.Sample
         static void Main(string[] args)
         {
             var config = new Config();
-            config.AppName = "seu app name";
-            config.OwnerName = "seu owner name";
-            config.Token = "token";
+            config.AppName = "your app name";
+            config.OwnerName = "your owner name";
+            config.Token = "appcenter token";
 
             var notificacao = new Notification
             {
