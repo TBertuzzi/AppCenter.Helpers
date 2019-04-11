@@ -1,11 +1,10 @@
 # AppCenter.Helpers
 
-
+**THIS PACKAGE IS BETA**
 
 Helpers to get data from Analitycs, Errors and Send Push Notification to the AppCenter
 
 ###### This is the component, works on .NET Core and.NET Framework
-
 
 **Info**
 
@@ -29,3 +28,43 @@ Use the config class to configure the name, owner, and token of your app in the 
      Token = "appcenter token"
 };
 ```
+
+To get a token [click here](https://docs.microsoft.com/en-us/appcenter/api-docs/) 
+
+**Push Notification**
+
+To send a notification simply fill in the Notification object and call the SendPushNotification
+
+```csharp
+   var notificacao = new Notification
+   {
+                NotificationTarget = new NotificationTarget
+                {
+                    Type = "devices_target",
+                    Devices = new List<string>(new string[] { "00000000-0000-0000-0000-000000000001" }) //exemplo
+                },
+                NotificationContent = new NotificationContent
+                {
+                    Name = "MyAppName",
+                    Title = "Notification Title",
+                    Body = "Notification Body",
+                }
+    };
+
+            var push = new PushNotification(config);
+            var result = push.SendPushNotification(notificacao);
+```
+
+
+To get all the notifications just use the method below
+
+```csharp
+    var resultList = push.GetPushNotifications();
+
+   foreach (var item in resultList.Value.ResultContent)
+   {
+    Console.WriteLine($"Item {item}");
+   }
+```
+
+To configure Push Notification in appcenter [click here](https://docs.microsoft.com/en-us/appcenter/push/) 
